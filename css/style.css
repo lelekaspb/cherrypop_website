@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* 
+@import url('https://allfont.net/allfont.css?fonts=badaboom-bb'); */
+
+body {
+    margin: 0;
+    background-image: url('../assets/svg/background.svg'); 
+    background-size: 1%; 
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+}
+
+
+#globalNav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0 auto;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    color: black;
+    text-decoration: none;
+}
+
+#girlandguy img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 4rem;
+
+}
+
+#logo img {
+    width: 9rem;
+    align-items: center;
+}
+
+#logo2 img {
+    width: 9rem;
+    align-items: center;
+}
+
+
+#menu_bt img {
+    width: 14rem;
+    align-items: center;
+}
+
+#download_bt {
+    grid-area: bt;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+#download_bt img {
+    width: 25rem;
+}
+
+#sec1 {
+    display: grid;
+    grid-template-areas: "head head"
+        "text fig"
+        "bt bt";
+
+    grid-template-columns: 1.5fr 1fr;
+    border: 0.17rem solid black;
+    background-color: white;
+    margin: 6rem;
+    padding: 5rem;
+    padding-top: 3rem;
+}
+
+#sec2 {
+    display: grid;
+    grid-template-areas: "head"
+        "text"
+        "fig";
+
+    grid-template-columns: 1fr;
+    border: 0.17rem solid black;
+    background-color: white;
+    margin: 6rem;
+    padding: 5rem;
+    padding-top: 3rem;
+}
+
+#sec3 {
+    display: grid;
+    grid-template-areas: "logo2 logo2"
+        "head head"
+        "text fig"
+        "bt bt";
+
+    grid-template-columns: 1.5fr 1fr;
+    border: 0.17rem solid black;
+    background-color: white;
+    margin: 6rem;
+    padding: 5rem;
+    padding-top: 3rem;
+}
+
+#lips {
+    width: 80%;
+    align-items: center;
+}
+
+#bottom {
+    width: 100%;
+}
+
+
+h1 {
+    grid-area: head;
+    font-family: 'BadaBoom BB', sans-serif;
+    font-size: 3.2em;
+    letter-spacing: 1px;
+    line-height: 0.5;
+    font-weight: lighter;
+}
+
+p {
+    font-family: 'montserrat', sans-serif;
+    font-size: 1em;
+    line-height: 1.9;
+}
+
+#text {
+    grid-area: text;
+
+}
+
+#logo2 {
+    grid-area: logo2;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+figure {
+    grid-area: fig;
+}
+
+#screen {
+    margin-top: 0;
+    width: auto;
+    border: 0.17rem solid black;
+    background-color: white;
+    margin-bottom: 6rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding: 4rem;
+
+}
+
+#vid {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 70%;
+    position: relative;
+}
+
+#controls {
+    position: relative;
+    width: 70%;
+    height: 32px;
+    background-color: black;
+    left: 15%;
+}
+
+#controls div {
+    width: 3em;
+    height: 2em;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    float: left;
+}
+
+
+#someNav {
+    width: 100%;
+    background-color: #7160a7;
+}
+
+#someNav ul {
+    width: 10%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#someNav a {
+    color: white;
+}
+
+#sm {
+    width: 60%;
+}
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-image: url('../assets/png/insta_post.png');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    header,
+    main,
+    footer {
+        display: none;
+    }
+}
